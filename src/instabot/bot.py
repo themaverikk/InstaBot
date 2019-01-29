@@ -177,7 +177,7 @@ class InstaBot:
 
         tiles = self.driver.find_elements_by_class_name(tile_class)
 
-        tiles = tiles[9:] if len(tiles) > 9 else tiles
+        # tiles = tiles[9:] if len(tiles) > 9 else tiles
 
         for i, tile in enumerate(tiles):
             try:
@@ -213,13 +213,13 @@ class InstaBot:
             WebDriverWait(self.driver, 20).until(
                 expected_conditions.presence_of_element_located((By.CSS_SELECTOR, "img._6q-tv")))
 
-            #self.follow(insta_username)
+            self.follow(insta_username)
 
             tiles = self.driver.find_elements_by_css_selector(".v1Nh3.kIKUG._bz0w a")
 
             i = 0
 
-            while i < min(1, len(tiles)):
+            while i < min(5, len(tiles)):
                 time.sleep(random.randint(1, 3))
                 tile = tiles[i]
 

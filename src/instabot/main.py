@@ -3,15 +3,13 @@ from instabot.bot import InstaBot
 
 if __name__ == '__main__':
     try:
-        username = ''  # username goes here
-        password = ''  # type your password here
+        username = '8750000375'  # username goes here
+        password = 'Insta@007'  # type your password here
 
         followed_accounts = persistence.read_followed_users()
         unfollowed_accounts = persistence.read_unfollowed_users()
         insta_bot = InstaBot(followed_accounts, unfollowed_accounts, username, password)
-        insta_bot.follow_like_profiles(followed_accounts)
-        # insta_bot.follow_people()
-        # insta_bot.unfollow_people(100)
+        insta_bot.follow_people()
 
 
     finally:
