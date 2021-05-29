@@ -1,3 +1,5 @@
+### This repository is no longer maintained, Open an issue to get support or feel free to contribute.
+
 # InstaBot
 Instagram Bot to automate commenting, liking and following other users.
 
